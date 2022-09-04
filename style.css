@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #0ea5e9;
+    color: white;
+    grid-row: 1/4;
+}
+
+.side-content {
+    display: grid;
+    grid-row: 2fr 1fr 1fr;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.menu {}
+
+ul>li {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styling */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 2/5;
+    grid-row: 1/1;
+    justify-items: center;
+    align-items: center;
+    height: 125px;
+}
+
+.search {
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+.profile {
+    grid-column: 3/4;
+    grid-row: 1/1;
+}
+
+.profile-main {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+.button-main {
+    grid-column: 3/4;
+    grid-row: 2/2;
+}
+
+.user-pic-prof {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
